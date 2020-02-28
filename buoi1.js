@@ -55,22 +55,27 @@
 
 // console.log(teo.getName())
 //Template string
-const rectangle = {
-    witdh : 10,
-    height : 20,
-    getWidth : function(){
-        return this.witdh
-    },
-    getHeight : function (){
-        return this.height
-    },
-    getArea : function (){
-        return `Dien tich ${this.witdh  * this.height}`
-    }
-}
+// const rectangle = {
+//     witdh : 10,
+//     height : 20,
+//     getWidth : function(){
+//         return this.witdh
+//     },
+//     getHeight : function (){
+//         return this.height
+//     },
+//     getArea : function (){
+//         return `Dien tich ${this.witdh  * this.height}`
+//     }
+// }
 
-console.log(rectangle.getArea())
+// console.log(rectangle.getArea())
 // console.log(rectangle.getWidth())
 // console.log(rectangle.getHeight())
+
+// 9 : Toan tu so sanh
+var a = '5'
+var b = '100'
+console.log(a > b)
 
 
