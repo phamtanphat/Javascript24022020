@@ -45,12 +45,32 @@
 // console.log(showName())
 
 // 8 : Object method
-const teo = {
-    name : "Nguyen Van Teo",
-    age : 10,
-    getName : function(){
-        return this.name
+// const teo = {
+//     name : "Nguyen Van Teo",
+//     age : 10,
+//     getName : function(){
+//         return this.name
+//     }
+// }
+
+// console.log(teo.getName())
+//Template string
+const rectangle = {
+    witdh : 10,
+    height : 20,
+    getWidth : function(){
+        return this.witdh
+    },
+    getHeight : function (){
+        return this.height
+    },
+    getArea : function (){
+        return `Dien tich ${this.witdh  * this.height}`
     }
 }
 
-console.log(teo.getName())
+console.log(rectangle.getArea())
+// console.log(rectangle.getWidth())
+// console.log(rectangle.getHeight())
+
+
