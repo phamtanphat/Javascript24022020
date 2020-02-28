@@ -15,5 +15,10 @@
 //Th2 : Goi thuoc tinh khong ton tai trong object
 
 // 3 : Kieu object
-var teo = {name : "Nguyen Van Teo",age : 10}
-console.log(teo['name'])
+// var teo = {name : "Nguyen Van Teo",age : 10}
+// console.log(teo['name'])
+
+//4 : Kieu Array
+const arrayNumber = []
+arrayNumber[0] = 10
+console.log(arrayNumber)
