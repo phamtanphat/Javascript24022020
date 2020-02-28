@@ -9,5 +9,11 @@
 //2 : Kieu du lieu
 // Cac truong hop gap undefined
 //Th1 : Khai bao nhung khong truyen gia tri
-const a 
-console.log(a)
+// var va let khong khai bao thi undefined nhung const thi khogng duoc
+// const a 
+// console.log(a)
+//Th2 : Goi thuoc tinh khong ton tai trong object
+
+// 3 : Kieu object
+var teo = {name : "Nguyen Van Teo",age : 10}
+console.log(teo['name'])
