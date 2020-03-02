@@ -74,8 +74,15 @@
 // console.log(rectangle.getHeight())
 
 // 9 : Toan tu so sanh
-var a = '5'
-var b = '100'
-console.log(a > b)
+// > < >= <= ! && ||
+var a = 5
+var b = null
+// Cac gia tri la false : null , false , undefined , 0 , "" ,NaN 
+// if(NaN){
+//     console.log("true")
+// }else{
+//     console.log("false")
+// }
+console.log(a + b)
 
 
