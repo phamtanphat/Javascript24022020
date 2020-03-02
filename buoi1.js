@@ -75,14 +75,15 @@
 
 // 9 : Toan tu so sanh
 // > < >= <= ! && ||
-var a = 5
-var b = null
 // Cac gia tri la false : null , false , undefined , 0 , "" ,NaN 
 // if(NaN){
 //     console.log("true")
 // }else{
 //     console.log("false")
 // }
-console.log(a + b)
+// var a = {name : 'Teo'}
+// var b = {name : 'Teo'}
+
+// console.log(a.name === b.name)
 
 
