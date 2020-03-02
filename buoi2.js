@@ -14,7 +14,7 @@
 // do {
 //     console.log(a)
 // } while (a < 5);
-var a = [1, 2, 4, 8, 16];
+// var a = [1, 2, 4, 8, 16];
 /**
  * Sử dụng vòng lặp for để hiển thị ra màn hình các phần tử của mảng a theo thứ tự ngược lại:
  * 16
@@ -39,15 +39,15 @@ var a = [1, 2, 4, 8, 16];
 // for(const value of numbers){
 //     console.log(value)
 // }
-var apartment = {
-    bedroom: {
-      area: 20,
-      bed: {
-        type: 'twin-bed',
-        price: 100
-      }
-    }
-  };
+// var apartment = {
+//     bedroom: {
+//       area: 20,
+//       bed: {
+//         type: 'twin-bed',
+//         price: 100
+//       }
+//     }
+//   };
 // for(const key in apartment){
 //     console.log("Key apartment: " + key)
 //     for(const keybedrom in apartment[key]){
@@ -57,10 +57,25 @@ var apartment = {
 //         }
 //     }
 // }
-function getKey(object){
-    for(const key in object){
-        console.log(key)
-        if(typeof object[key] === 'object')getKey(object[key])
-    }
-}
-getKey(apartment)
+// function getKey(object){
+//     for(const key in object){
+//         console.log(key)
+//         if(typeof object[key] === 'object')getKey(object[key])
+//     }
+// }
+// getKey(apartment)
+
+// 12 : Array method
+const arrayNames = ["Teo","Ti","Tun"]
+
+// Them phan tu phia cuoi mang
+// arrayNames.push("Hoa","Tuan")
+// Them phan tu o dau mang
+// arrayNames.unshift("Hoa","Tuan")
+// Xoa phan tu o cuoi mang
+// arrayNames.pop()
+// Xoa phan tu o dau
+// arrayNames.shift()
+
+
+// console.log(arrayNames)
