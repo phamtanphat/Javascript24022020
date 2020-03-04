@@ -68,16 +68,26 @@ const numbers = [1,2,3,4,5,6,7,8,9,10]
 //     return value
 // })
 
-Array.prototype.myMap = function(cb){
-    const newArray = []
-    for(var i = 0 ; i < this.length ; i++){
-        newArray.push(cb(this[i]))
-    }
-    return newArray
-}
-const newNumbers = numbers.myMap(function(value){
-    if(value > 5) return value * 2
-    return value
+// Array.prototype.myMap = function(cb){
+//     const newArray = []
+//     for(var i = 0 ; i < this.length ; i++){
+//         newArray.push(cb(this[i]))
+//     }
+//     return newArray
+// }
+// const newNumbers = numbers.myMap(function(value){
+//     if(value > 5) return value * 2
+//     return value
+// })
+// console.log(newNumbers)
+
+const arraySinhvien = [
+    {name : 'Teo',age : 15},
+    {name : 'Ti',age : 12},
+    {name : 'Tun',age : 11},
+]
+const arrayAge = arraySinhvien.map(function(value){
+    return value.age
 })
-console.log(newNumbers)
+console.log(arrayAge)
 
