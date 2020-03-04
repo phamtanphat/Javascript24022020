@@ -39,6 +39,8 @@
 // for(var y = 1 ; y <= 100 ; y++){
 //     if( y % 2 == 1) console.log(y)
 // }
+
+
 // In So chia 3 du 1
 // for(var z = 1 ; z <= 100 ; z++){
 //     if( z % 3 == 1) console.log(z)
@@ -48,6 +50,14 @@
 //     if(Math.sqrt(e) % 1 == 0) console.log(e)
 // }
 
-
-
+function handleNumber(dosth){
+    for(var i = 1 ; i <= 100 ; i++){
+       const dk = dosth(i)
+       if(dk) console.log(i)
+    }   
+}
+handleNumber(function(number){
+    if(Math.sqrt(number) % 1 == 0) return true
+    return false
+})
 
