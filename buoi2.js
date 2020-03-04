@@ -66,7 +66,7 @@
 // getKey(apartment)
 
 // 12 : Array method
-const arrayNames = ["Teo","Ti","Tun"]
+// const arrayNames = ["Teo","Ti","Tun"]
 
 // Them phan tu phia cuoi mang
 // arrayNames.push("Hoa","Tuan")
