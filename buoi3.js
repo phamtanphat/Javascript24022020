@@ -63,7 +63,19 @@
 
 // 14 : Ham map
 const numbers = [1,2,3,4,5,6,7,8,9,10]
-const newNumbers = numbers.map(function(value){
+// const newNumbers = numbers.map(function(value){
+//     if(value > 5) return value * 2
+//     return value
+// })
+
+Array.prototype.myMap = function(cb){
+    const newArray = []
+    for(var i = 0 ; i < this.length ; i++){
+        newArray.push(cb(this[i]))
+    }
+    return newArray
+}
+const newNumbers = numbers.myMap(function(value){
     if(value > 5) return value * 2
     return value
 })
