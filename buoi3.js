@@ -62,7 +62,7 @@
 // })
 
 // 14 : Ham map
-const numbers = [1,2,3,4,5,6,7,8,9,10]
+// const numbers = [1,2,3,4,5,6,7,8,9,10]
 // const newNumbers = numbers.map(function(value){
 //     if(value > 5) return value * 2
 //     return value
@@ -81,13 +81,25 @@ const numbers = [1,2,3,4,5,6,7,8,9,10]
 // })
 // console.log(newNumbers)
 
+// const arraySinhvien = [
+//     {name : 'Teo',age : 15},
+//     {name : 'Ti',age : 12},
+//     {name : 'Tun',age : 11},
+// ]
+// const arrayAge = arraySinhvien.map(function(value){
+//     return value.age
+// })
+// console.log(arrayAge)
+
+// 15 : Ham filter
 const arraySinhvien = [
     {name : 'Teo',age : 15},
     {name : 'Ti',age : 12},
     {name : 'Tun',age : 11},
 ]
-const arrayAge = arraySinhvien.map(function(value){
-    return value.age
+const newArraySinhvien = arraySinhvien.filter(function(sinhvien){
+    if(sinhvien.age > 12) return true
+    return false
 })
-console.log(arrayAge)
+console.log(newArraySinhvien)
 
