@@ -50,14 +50,22 @@
 //     if(Math.sqrt(e) % 1 == 0) console.log(e)
 // }
 
-function handleNumber(dosth){
-    for(var i = 1 ; i <= 100 ; i++){
-       const dk = dosth(i)
-       if(dk) console.log(i)
-    }   
-}
-handleNumber(function(number){
-    if(Math.sqrt(number) % 1 == 0) return true
-    return false
+// function handleNumber(dosth){
+//     for(var i = 1 ; i <= 100 ; i++){
+//        const dk = dosth(i)
+//        if(dk) console.log(i)
+//     }   
+// }
+// handleNumber(function(number){
+//     if(Math.sqrt(number) % 1 == 0) return true
+//     return false
+// })
+
+// 14 : Ham map
+const numbers = [1,2,3,4,5,6,7,8,9,10]
+const newNumbers = numbers.map(function(value){
+    if(value > 5) return value * 2
+    return value
 })
+console.log(newNumbers)
 
