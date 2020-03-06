@@ -8,7 +8,13 @@
 
 // Trả về số lượng người đã vote
 function totalVotes(arr) {
-
+    const value = arr.reduce(function(previous , currentValue){
+        if(currentValue.voted){
+            return previous + 1
+        }
+        return previous
+    },0);
+    console.log(value)
 }
 var voters = [
   {name:'Bob' , age: 30, voted: true},
