@@ -105,27 +105,37 @@
 
 // console.log(teo.school == ti.sayHello)
 
-//18 : Toan tu ba ngoi
+// 18 : Toan tu ba ngoi
 // Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
-function doSomething(a) {
-    var b;
-    if (a > 0) {
-      b = 1;
-    } else if (a < 0) {
-      b = 2;
-    } else {
-      b = 3;
-    }
-    return b;
-  }
+// function doSomething(a) {
+//     var b;
+//     if (a > 0) {
+//       b = 1;
+//     } else if (a < 0) {
+//       b = 2;
+//     } else {
+//       b = 3;
+//     }
+//     return b;
+//   }
   
-  function doSomethingTernary(a) {
-      const b = a < 0 ? 2 : (a > 0 ? 1 : 3) 
-      return b
+//   function doSomethingTernary(a) {
+//       const b = a < 0 ? 2 : (a > 0 ? 1 : 3) 
+//       return b
     
-  }
-  console.log(doSomethingTernary(3))
-  console.log(doSomething(3))
+//   }
+//   console.log(doSomethingTernary(3))
+//   console.log(doSomething(3))
   
   // Test 2 hàm trên với cùng đầu vào
-  
+
+// Java nang cao
+// 1 : Var let const 
+
+let name = "Teo"
+function showName(){
+    let name = "Ti"
+    return name
+}
+
+console.log(showName())
