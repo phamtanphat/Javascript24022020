@@ -50,16 +50,30 @@
 // ];
 // shoppingSpree(wishlist) // 227005
 
-function countOccurrences(arr) {
-    const value = arr.reduce(function(previous , currentValue){
-        if(currentValue in previous){
-            previous[currentValue]++
-        }else{
-            previous[currentValue] = 1
-        }
-        return previous
-    },{})
-    console.log(value)
+// function countOccurrences(arr) {
+//     const value = arr.reduce(function(previous , currentValue){
+//         if(currentValue in previous){
+//             previous[currentValue]++
+//         }else{
+//             previous[currentValue] = 1
+//         }
+//         return previous
+//     },{})
+//     console.log(value)
 
-}
-countOccurrences(["a", "b", "c", "b", "a", "a"]);
+// }
+// countOccurrences(["a", "b", "c", "b", "a", "a"]);
+
+const arraySinhvien = [
+    {name : 'Teo' , age : 10},
+    {name : 'Ti' , age : 20},
+    {name : 'Tuan' , age : 15}
+]
+// Ket hop phuong thuc map va reduce de tinh tong tuoi
+const total = arraySinhvien.map(function(sinhvien){
+    return sinhvien.age
+}).reduce(function(pre , current){
+    return pre + current
+})
+
+console.log(total)
