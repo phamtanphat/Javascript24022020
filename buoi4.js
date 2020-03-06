@@ -49,3 +49,17 @@
 //   { title: "A second Tesla Model S", price: 90000 }
 // ];
 // shoppingSpree(wishlist) // 227005
+
+function countOccurrences(arr) {
+    const value = arr.reduce(function(previous , currentValue){
+        if(currentValue in previous){
+            previous[currentValue]++
+        }else{
+            previous[currentValue] = 1
+        }
+        return previous
+    },{})
+    console.log(value)
+
+}
+countOccurrences(["a", "b", "c", "b", "a", "a"]);
