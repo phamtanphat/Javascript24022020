@@ -64,16 +64,35 @@
 // }
 // countOccurrences(["a", "b", "c", "b", "a", "a"]);
 
-const arraySinhvien = [
-    {name : 'Teo' , age : 10},
-    {name : 'Ti' , age : 20},
-    {name : 'Tuan' , age : 15}
-]
+// const arraySinhvien = [
+//     {name : 'Teo' , age : 10},
+//     {name : 'Ti' , age : 20},
+//     {name : 'Tuan' , age : 15}
+// ]
 // Ket hop phuong thuc map va reduce de tinh tong tuoi
-const total = arraySinhvien.map(function(sinhvien){
-    return sinhvien.age
-}).reduce(function(pre , current){
-    return pre + current
-})
+// const total = arraySinhvien.map(function(sinhvien){
+//     return sinhvien.age
+// }).reduce(function(pre , current){
+//     return pre + current
+// })
+// console.log(total)
 
-console.log(total)
+// 16 : Ham sort
+//const arrayChar = ['a','b','e','c','f','d']
+// const arrayNumbers = [9,1,2,8,4,6,5,0,10,3,7]
+// const newArrayChar = arrayNumbers.sort(function(a , b){
+//     return b - a
+// })
+// console.log(newArrayChar)
+
+// 17 : Khoi tao ra object
+
+function Sinhvien(name , age , address){
+    this.name = name;
+    this.age  = age;
+    this.address = address;
+}
+
+const teo = new Sinhvien("Nguyen Van Teo",20 , "38 nguyen lam")
+delete teo.address
+console.log(teo.address)
