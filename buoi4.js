@@ -91,8 +91,16 @@ function Sinhvien(name , age , address){
     this.name = name;
     this.age  = age;
     this.address = address;
+    this.sayHello = function(){
+        return "hello"
+    }
 }
 
-const teo = new Sinhvien("Nguyen Van Teo",20 , "38 nguyen lam")
-delete teo.address
-console.log(teo.address)
+Sinhvien.prototype.school = function(){
+    return "Trung tam khoa pham"
+}
+
+const teo = new Sinhvien("Nguyen Van Teo", 20 , "38 nguyen lam")
+const ti = new Sinhvien("Nguyen Van Ti", 15 , "Quan 1")
+
+console.log(teo.school == ti.school)
