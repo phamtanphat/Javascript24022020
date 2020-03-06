@@ -87,20 +87,45 @@
 
 // 17 : Khoi tao ra object
 
-function Sinhvien(name , age , address){
-    this.name = name;
-    this.age  = age;
-    this.address = address;
-    this.sayHello = function(){
-        return "hello"
+// function Sinhvien(name , age , address){
+//     this.name = name;
+//     this.age  = age;
+//     this.address = address;
+//     this.sayHello = function(){
+//         return "hello"
+//     }
+// }
+
+// Sinhvien.prototype.school = function(){
+//     return "Trung tam khoa pham"
+// }
+
+// const teo = new Sinhvien("Nguyen Van Teo", 20 , "38 nguyen lam")
+// const ti = new Sinhvien("Nguyen Van Ti", 15 , "Quan 1")
+
+// console.log(teo.school == ti.sayHello)
+
+//18 : Toan tu ba ngoi
+// Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
+function doSomething(a) {
+    var b;
+    if (a > 0) {
+      b = 1;
+    } else if (a < 0) {
+      b = 2;
+    } else {
+      b = 3;
     }
-}
-
-Sinhvien.prototype.school = function(){
-    return "Trung tam khoa pham"
-}
-
-const teo = new Sinhvien("Nguyen Van Teo", 20 , "38 nguyen lam")
-const ti = new Sinhvien("Nguyen Van Ti", 15 , "Quan 1")
-
-console.log(teo.school == ti.school)
+    return b;
+  }
+  
+  function doSomethingTernary(a) {
+      const b = a < 0 ? 2 : (a > 0 ? 1 : 3) 
+      return b
+    
+  }
+  console.log(doSomethingTernary(3))
+  console.log(doSomething(3))
+  
+  // Test 2 hàm trên với cùng đầu vào
+  
