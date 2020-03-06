@@ -103,11 +103,11 @@
 // })
 // console.log(newArraySinhvien)
 
-const arraySinhvien = [
-    {name : 'Teo',age : 15},
-    {name : 'Ti',age : 12},
-    {name : 'Tun',age : 11},
-]
+// const arraySinhvien = [
+//     {name : 'Teo',age : 15},
+//     {name : 'Ti',age : 12},
+//     {name : 'Tun',age : 11},
+// ]
 // Viet phuong thuc tra ve 1 mang moi 
 // . Mang se chua phan tu co so tuoi chan va khi chi cho 2 phai lon hon 5
 
