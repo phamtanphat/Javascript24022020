@@ -34,13 +34,30 @@
 // }
 // teo.sayhi()
 
-// Arguments
+// Arguments : gia tri dau vao cua function
 
-function sum(){
-    console.log(typeof arguments)
-    const numbers = Array.from(arguments)
-    return numbers.reduce((sum , num) => sum + num)
-}
+// function sum(){
+//     const numbers = Array.from(arguments)
+//     return numbers.reduce((sum , num) => sum + num)
+// }
   
-  console.log(sum(1,2,3,4,5,6))
+//   console.log(sum(1,2,3,4,5,6))
+
+//Default
+
+// function showInfo(name , age = 0 , address = ""){
+//     console.log(name , age , address)
+// }
+// showInfo("Teo")
+
+// Call
+const teo = {
+    name : "Nguyen Van Teo",
+    age : 10
+}
+function greeting(name,age){
+    console.log(`Hi! ${name} . I am ${age}`)
+  }
+greeting.call(null ,teo.name , teo.age )
+  
   
