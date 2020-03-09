@@ -71,3 +71,26 @@
 // }
 //   average(1,2,3,6)
   
+//rest
+// function sum(...nums){
+//     return nums.reduce((a ,b) => a + b)
+//   }
+
+// console.log(sum(1,2,3,4,5))
+//spread
+// const numbers = [1,2,3,4,5,6]
+// function sum(...numbers){
+//     console.log(numbers.join())
+// }
+// sum(...numbers)
+
+// destructuring
+// const arr = [10,20,30,40,50]
+
+// const [a,b,c,d] = arr
+// const teo = { 
+//     name : "Nguyen Van Teo",
+//     age : 10
+// }
+// const {name , age } = teo
+// console.log(name)
