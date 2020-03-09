@@ -51,13 +51,23 @@
 // showInfo("Teo")
 
 // Call
-const teo = {
-    name : "Nguyen Van Teo",
-    age : 10
-}
-function greeting(name,age){
-    console.log(`Hi! ${name} . I am ${age}`)
-  }
-greeting.call(null ,teo.name , teo.age )
+// const teo = {
+//     name : "Nguyen Van Teo",
+//     age : 10
+// }
+// function greeting(name,age){
+//     console.log(`Hi! ${name} . I am ${age}`)
+//   }
+// greeting.call(null ,teo.name , teo.age )
   
+// Apply
+// function sum(){
+//     const numbers = Array.from(arguments)
+//     return numbers.reduce((sum , num )=> sum + num , 0)
+//   }
+// function average(){
+//     const x = sum.apply(null,arguments)
+//     return x / arguments.length
+// }
+//   average(1,2,3,6)
   
