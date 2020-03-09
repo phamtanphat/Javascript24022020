@@ -132,10 +132,10 @@
 // Java nang cao
 // 1 : Var let const 
 
-let name = "Teo"
-function showName(){
-    let name = "Ti"
-    return name
-}
+// let name = "Teo"
+// function showName(){
+//     let name = "Ti"
+//     return name
+// }
 
-console.log(showName())
+// console.log(showName())
